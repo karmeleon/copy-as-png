@@ -1,0 +1,10 @@
+{
+	"manifest_version": 2,
+	"name": "webp2legacy",
+	"version": "1.0.0",
+	"description": "Automatically converts WebP images on the clipboard to legacy image formats",
+	"permissions": ["menus", "clipboardWrite", "activeTab", "scripting"],
+	"background": {
+		"scripts": ["main.js"]
+	}
+}
