@@ -1,10 +1,14 @@
 {
 	"manifest_version": 2,
-	"name": "webp2legacy",
+	"name": "Copy as PNG",
 	"version": "1.0.0",
-	"description": "Automatically converts WebP images on the clipboard to legacy image formats",
-	"permissions": ["menus", "clipboardWrite", "activeTab", "scripting"],
+	"description": "Copy any image on the 'net as PNG",
+	"permissions": ["menus", "clipboardWrite", "scripting", "<all_urls>"],
 	"background": {
 		"scripts": ["main.js"]
+	},
+	"icons": {
+		"48": "res/png-icon-light.svg",
+		"96": "res/png-icon-light.svg"
 	}
 }
