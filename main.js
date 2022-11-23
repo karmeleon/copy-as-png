@@ -16,8 +16,8 @@ browser.menus.onClicked.addListener(async (info, tab) => {
 			const targetImgElem = browser.menus.getTargetElement(targetElementId);
 			// make a canvas of the same size as the image and get its contents
 			const canvasElem = document.createElement('canvas');
-			canvasElem.height = targetImgElem.height;
-			canvasElem.width = targetImgElem.width;
+			canvasElem.height = targetImgElem.naturalHeight;
+			canvasElem.width = targetImgElem.naturalWidth;
 			const ctx = canvasElem.getContext('2d');
 			// draw the image to the canvas
 			// normally this is insecure but we have host privileges so ff lets us do it
