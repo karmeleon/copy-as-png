@@ -1,12 +1,15 @@
 const MENU_ID = "webp2legacy";
-browser.menus.create({
-	id: MENU_ID,
-	title: "Copy as PNG",
-	contexts: ["image"],
-	icons: {
-		// TODO: use a different icon here for dark vs light mode
-		"32": "res/png-icon-light.svg",
-	},
+
+browser.runtime.onInstalled.addListener(() => {
+	browser.menus.create({
+		id: MENU_ID,
+		title: "Copy as PNG",
+		contexts: ["image"],
+		icons: {
+			// TODO: use a different icon here for dark vs light mode
+			"32": "res/png-icon-light.svg",
+		},
+	});
 });
 
 browser.menus.onClicked.addListener(async (info, tab) => {

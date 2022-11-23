@@ -5,7 +5,8 @@
 	"description": "Copy any image on the 'net as PNG",
 	"permissions": ["menus", "clipboardWrite", "scripting", "<all_urls>"],
 	"background": {
-		"scripts": ["main.js"]
+		"scripts": ["main.js"],
+		"persistent": false
 	},
 	"icons": {
 		"48": "res/png-icon-light.svg",
