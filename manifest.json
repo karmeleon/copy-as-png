@@ -1,7 +1,7 @@
 {
 	"manifest_version": 2,
 	"name": "Copy as PNG",
-	"version": "1.0.1",
+	"version": "1.0.2",
 	"description": "Copy any image on the 'net as PNG",
 	"permissions": ["menus", "clipboardWrite", "scripting", "<all_urls>"],
 	"background": {
